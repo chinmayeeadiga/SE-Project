@@ -1,0 +1,6 @@
+I want to develop a Core Banking Ledger, Loan Origination, and Regulatory Reporting System for a scheduled commercial bank in India.
+The system should allow customers to open fixed/recurring deposits, apply for personal or home loans, view loan amortization schedules, download tax/interest certificates, and submit data privacy or grievance requests.
+Loan underwriters and branch managers should be able to verify customer KYC documents, evaluate credit eligibility, approve or reject loan applications using maker-checker workflows, and freeze accounts flagged for suspicious activity.
+Bank administrators and compliance officers should be able to configure interest rate slabs, define user roles and access permissions, generate statutory regulatory reports, and inspect immutable system audit logs.
+The system must prevent duplicate loan disbursements, ensure accurate interest and EMI calculations, enforce strict consent and data retention controls, and restrict access to customer financial records to authorized personnel only.
+The application should provide a clear, accessible interface, safeguard confidential customer information in compliance with Indian banking and data protection laws, support multiple concurrent users, and ensure reliable, tamper-evident storage of financial records.

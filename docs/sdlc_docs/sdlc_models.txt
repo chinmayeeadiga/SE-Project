@@ -1,0 +1,102 @@
+Waterfall Model:
+The Waterfall model is the oldest and most traditional SDLC model. It follows a sequential, linear flow through phases: Requirements -> Design -> Implementation -> Verification -> Maintenance. Each phase must be completed before the next begins. No going back to a previous phase once it is done.
+
+Best suited for:
+- Projects with well-defined, stable requirements
+- Requirements that can be fully specified at the start
+- Low-risk, well-understood domains
+- Projects where extensive documentation is required
+- Fixed-price, fixed-scope contracts
+- Safety-critical systems where all requirements are known upfront
+
+Not suitable for:
+- Projects with changing requirements
+- Complex and object-oriented projects
+- Projects where requirements are unclear
+- Long ongoing projects
+
+V-Shaped Model:
+The V-Shaped model (Verification and Validation model) is an extension of the Waterfall model. It emphasizes testing at every development stage. The left side represents development phases; the right side represents corresponding testing phases. Each development phase has a corresponding testing phase.
+
+Phases: Requirements Analysis <-> Acceptance Testing, System Design <-> System Testing, Architecture Design <-> Integration Testing, Module Design <-> Unit Testing, Coding.
+
+Best suited for:
+- Projects with well-defined, stable requirements
+- System integration projects
+- Projects requiring extensive testing and verification
+- Projects where continuous verification and validation is necessary during development
+- Safety-critical systems
+- Projects requiring clear documentation at each phase
+- Small to medium-sized projects
+
+Not suitable for:
+- Projects requiring prototyping
+- High-risk projects with unclear requirements
+
+Prototype Model:
+The Prototype model involves building a working prototype early to clarify requirements. The prototype is evaluated by stakeholders, refined iteratively, then the actual system is built. It reduces the risk of building the wrong system.
+
+Types: Throwaway/Rapid Prototyping, Evolutionary Prototyping, Incremental Prototyping, Extreme Prototyping.
+
+Best suited for:
+- Projects where requirements are not well understood
+- Requirements that need demonstration to achieve definition
+- User interfaces and interactive systems
+- High user involvement required
+- Proof of concept needed
+- Projects where user feedback is critical
+
+Not suitable for:
+- Large-scale systems
+- Projects with well-defined requirements
+- Projects with limited time and resources
+
+Spiral Model:
+The Spiral model combines the Waterfall model and Prototyping. It is risk-driven and iterative. Each spiral represents a phase: Planning, Risk Analysis, Engineering, Evaluation. The process repeats in spirals.
+
+Best suited for:
+- Large, high-risk projects
+- Projects with significant uncertainty
+- Projects where requirements may change
+- Systems requiring continuous refinement through prototypes
+- Projects with unclear requirements
+- Technologically complex systems
+
+Not suitable for:
+- Small projects with low risk
+- Projects with stable requirements
+- Projects with budget constraints (spirals add cost)
+
+RAD (Rapid Application Development) Model:
+RAD focuses on rapid prototyping and quick feedback cycles. It uses component reuse, parallel development teams, and user feedback loops. Timeline is typically 60-90 days.
+
+Phases: Business Modeling, Data Modeling, Process Modeling, Application Generation, Testing and Turnover.
+
+Best suited for:
+- Projects that can be broken into smaller components
+- System integration projects
+- Projects needing rapid delivery (60-90 day cycles)
+- Availability of experienced developers (not new to technology/tools)
+- High user involvement
+- Modular systems
+
+Not suitable for:
+- Projects needing high performance
+- Systems that cannot be modularized
+- Teams new to the domain
+
+Incremental Model:
+The Incremental model delivers software in increments/releases. Each increment adds new functionality. The first increment often covers core requirements, with subsequent increments adding features.
+
+Best suited for:
+- Projects with well-understood core requirements
+- Long-life software products
+- Projects that can be broken into independent releases
+- User involvement throughout development
+- Enhancement projects
+- New product direction for organizations
+
+Not suitable for:
+- Projects requiring complete system delivery at once
+- Projects with highly interdependent components
+- Projects with unstable architecture

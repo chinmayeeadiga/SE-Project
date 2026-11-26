@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Requirements Engineering &amp; SDLC Detection</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="top">
+  <h1>Requirements &amp; SDLC Analyzer</h1>
+  <div class="sys" id="sys-pill"><span class="dot"></span><span id="sys-text">Connecting…</span></div>
+</header>
+
+<nav class="tabs" id="nav">
+  <button class="tab active" data-view="analyze">Analyze</button>
+  <button class="tab" data-view="reports">Reports</button>
+  <button class="tab" data-view="kb">Knowledge</button>
+  <button class="tab" data-view="eval">Evaluation</button>
+  <button class="tab" data-view="system">System</button>
+</nav>
+
+<main>
+  <!-- ANALYZE -->
+  <section class="view active" id="view-analyze">
+    <div class="grid-2">
+      <div class="card">
+        <label class="lbl" for="title">Project title</label>
+        <input id="title" class="field" placeholder="e.g. Retail Neobank Platform" autocomplete="off">
+        <label class="lbl" for="text">Stakeholder input <span class="count" id="count">0 chars</span></label>
+        <textarea id="text" class="field" rows="14" placeholder="Paste stakeholder requirements here"></textarea>
+        <div class="row">
+          <button class="btn primary" id="run">Analyze</button>
+          <label class="btn" for="file">Load file</label>
+          <input type="file" id="file" accept=".md,.txt,text/plain" hidden>
+          <button class="btn" id="clear">Clear</button>
+        </div>
+      </div>
+      <div class="card">
+        <h3 class="h-sub">Samples</h3>
+        <div id="samples" class="samples"></div>
+      </div>
+    </div>
+
+    <div id="loading" class="loading" hidden>
+      <div class="bar"><i></i></div>
+      <p id="loading-msg">Analyzing… this can take several minutes.</p>
+    </div>
+
+    <div id="error" class="error" hidden></div>
+    <div id="results"></div>
+  </section>
+
+  <!-- REPORTS -->
+  <section class="view" id="view-reports">
+    <div id="report-list" class="report-list"></div>
+    <div id="report-detail"></div>
+  </section>
+
+  <!-- KNOWLEDGE -->
+  <section class="view" id="view-kb">
+    <div class="card">
+      <div class="row nomt">
+        <input id="q" class="field grow" placeholder="Search the regulations and SDLC reference">
+        <select id="qtype" class="field">
+          <option value="">All sources</option>
+          <option value="regulatory">Regulatory</option>
+          <option value="sdlc_reference">SDLC reference</option>
+        </select>
+        <button class="btn primary" id="qgo">Search</button>
+      </div>
+    </div>
+    <div id="kb-loading" class="inline-load" hidden>Searching…</div>
+    <div id="kb-results"></div>
+  </section>
+
+  <!-- EVAL -->
+  <section class="view" id="view-eval">
+    <div class="card">
+      <p class="plain">Runs the retrieval benchmark against the knowledge base.</p>
+      <button class="btn primary" id="evalgo">Run benchmark</button>
+    </div>
+    <div id="eval-loading" class="inline-load" hidden>Running…</div>
+    <div id="eval-results"></div>
+  </section>
+
+  <!-- SYSTEM -->
+  <section class="view" id="view-system">
+    <div id="sys-grid" class="stats"></div>
+    <div class="card">
+      <h3 class="h-sub">Knowledge base</h3>
+      <div class="row nomt">
+        <button class="btn" id="ingest">Ingest</button>
+        <button class="btn" id="ingest-force">Force re-index</button>
+      </div>
+      <pre id="ingest-out" class="out" hidden></pre>
+    </div>
+  </section>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
